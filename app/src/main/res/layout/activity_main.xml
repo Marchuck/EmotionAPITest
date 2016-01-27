@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.marchuck.emotionapitest.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="80sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"
+            android:layout_width="256sp"
+            android:layout_height="256sp" />
+
+        <ScrollView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="200sp">
+            <TextView
+                android:id="@+id/textView1"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:text="text"
+                android:layout_below="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
